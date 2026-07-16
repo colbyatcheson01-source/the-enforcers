@@ -15,7 +15,7 @@ export default function GuardianKnight() {
         {!imgError ? (
           <img
             src={`${basePath}/images/guardian-of-justice.png`}
-            alt="The Enforcers MC - Club logo"
+            alt="The Enforcers SC - Club logo"
             className="w-full h-auto"
             onError={() => setImgError(true)}
           />
@@ -23,7 +23,7 @@ export default function GuardianKnight() {
           <div className="p-6">
             <img
               src={`${basePath}/images/enforcers-logo.svg`}
-              alt="The Enforcers MC"
+              alt="The Enforcers SC"
               className="w-full h-auto"
             />
           </div>
@@ -34,7 +34,7 @@ export default function GuardianKnight() {
         <div className="font-display text-2xl font-bold text-white tracking-widest uppercase">
           The <span className="text-biker-flame">Enforcers</span>
         </div>
-        <div className="font-mono text-xs text-neutral-500 tracking-[0.3em] uppercase">MC</div>
+        <div className="font-mono text-xs text-neutral-500 tracking-[0.3em] uppercase">SC</div>
         <div className="flex items-center justify-center gap-2 mt-2">
           <span className="block w-8 border-t-2 border-dotted border-biker-steel"></span>
           <span className="font-display text-sm font-bold text-biker-flame tracking-widest uppercase">

@@ -62,7 +62,7 @@ export default function AboutPage() {
                 About The <span className="text-biker-flame">Enforcers</span>
               </h1>
               <p className="text-lg text-neutral-400 leading-relaxed font-mono">
-                A Canadian motorcycle club dedicated to building safer communities through lawful, compassionate action. We ride for justice.
+                A Canadian street club dedicated to building safer communities through lawful, compassionate action. We ride for justice.
               </p>
             </div>
             <div className="flex justify-center lg:justify-end">
@@ -79,7 +79,7 @@ export default function AboutPage() {
             <h2 className="page-title">The Club&rsquo;s Oath</h2>
             <div className="divider-biker max-w-xs mx-auto mb-6"></div>
             <p className="text-lg text-neutral-400 leading-relaxed font-mono">
-              The Enforcers MC promotes a safe, inclusive, and supportive environment for all people, with special emphasis on protecting vulnerable individuals including women, children, and at-risk populations. We raise awareness, provide resources, and support lawful, community-based interventions.
+              The Enforcers SC promotes a safe, inclusive, and supportive environment for all people, with special emphasis on protecting vulnerable individuals including women, children, and at-risk populations. We raise awareness, provide resources, and support lawful, community-based interventions.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function AboutPage() {
           <div className="divider-biker max-w-xs mx-auto"></div>
           <div className="max-w-3xl mx-auto space-y-4 text-neutral-400">
             <p className="text-lg leading-relaxed font-mono">
-              The Enforcers MC is committed to lawful action, privacy protection, and the well-being of all community members. We do not encourage or engage in vigilantism, harassment, or any form of unlawful conduct.
+              The Enforcers SC is committed to lawful action, privacy protection, and the well-being of all community members. We do not encourage or engage in vigilantism, harassment, or any form of unlawful conduct.
             </p>
             <p className="text-lg leading-relaxed font-mono">
               We work collaboratively with law enforcement, social services, and community organizations to ensure that our interventions are safe, legal, and effective.

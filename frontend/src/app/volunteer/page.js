@@ -61,7 +61,7 @@ export default function VolunteerPage() {
             </div>
             <h2 className="text-2xl font-bold text-white mb-4 font-display uppercase tracking-wider">Welcome, Brother</h2>
             <p className="text-neutral-400 mb-8 leading-relaxed font-mono text-sm">
-              Thank you for your interest in riding with The Enforcers MC. Our team will review your application and contact you within 5-7 business days regarding next steps, including the background screening process.
+              Thank you for your interest in riding with The Enforcers SC. Our team will review your application and contact you within 5-7 business days regarding next steps, including the background screening process.
             </p>
             <p className="text-sm text-neutral-600 font-mono">Questions? <span className="text-biker-flame">[insert email]</span></p>
           </div>
@@ -124,7 +124,7 @@ export default function VolunteerPage() {
             </div>
             <div>
               <label className="label">Skills & Experience</label>
-              <textarea name="skills" value={formData.skills} onChange={handleChange} rows={4} className={`input ${errors.skills ? 'input-error' : ''}`} placeholder="Describe your skills and why you want to ride with The Enforcers MC" />
+              <textarea name="skills" value={formData.skills} onChange={handleChange} rows={4} className={`input ${errors.skills ? 'input-error' : ''}`} placeholder="Describe your skills and why you want to ride with The Enforcers SC" />
               {errors.skills && <p className="mt-1 text-xs text-biker-flame font-mono">{errors.skills}</p>}
             </div>
 
@@ -133,7 +133,7 @@ export default function VolunteerPage() {
                 <input type="checkbox" id="consentGiven" name="consentGiven" checked={formData.consentGiven} onChange={handleChange} className="mt-1 w-4 h-4 text-biker-flame border-biker-steel rounded-none focus:ring-biker-flame bg-biker-black" />
                 <label htmlFor="consentGiven" className="text-sm text-neutral-400 leading-relaxed cursor-pointer font-mono">
                   <span className="font-bold text-biker-flame">I consent to lawful background screening conducted through approved third-party providers.</span>
-                  {' '}I understand that a criminal record check and vulnerable sector screening will be required. I authorize The Enforcers MC to conduct these checks through approved providers in accordance with Canadian laws.
+                  {' '}I understand that a criminal record check and vulnerable sector screening will be required. I authorize The Enforcers SC to conduct these checks through approved providers in accordance with Canadian laws.
                 </label>
               </div>
               {errors.consentGiven && <p className="mt-2 text-xs text-biker-flame ml-7 font-mono">{errors.consentGiven}</p>}

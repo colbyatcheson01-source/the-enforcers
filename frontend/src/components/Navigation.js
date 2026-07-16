@@ -18,7 +18,7 @@ export default function Navigation() {
     <header className="bg-biker-black border-b-2 border-biker-steel/50 sticky top-0 z-50 flame-bar">
       <nav className="container-custom" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="flex items-center gap-3 group" aria-label="The Enforcers MC - Home">
+          <Link href="/" className="flex items-center gap-3 group" aria-label="The Enforcers SC - Home">
             <div className="w-10 h-10 bg-biker-dark rounded-sm flex items-center justify-center border-2 border-biker-chrome/40 group-hover:border-biker-flame transition-all">
               <svg viewBox="0 0 100 100" className="w-7 h-7" fill="none">
                 <ellipse cx="50" cy="48" rx="18" ry="20" stroke="#e0e0e0" strokeWidth="3"/>
@@ -32,7 +32,7 @@ export default function Navigation() {
               <span className="font-bold text-lg text-white font-display tracking-widest uppercase">
                 The <span className="text-biker-flame">Enforcers</span>
               </span>
-              <span className="block text-[10px] text-neutral-500 tracking-[0.3em] uppercase -mt-0.5">MC</span>
+              <span className="block text-[10px] text-neutral-500 tracking-[0.3em] uppercase -mt-0.5">SC</span>
             </div>
           </Link>
 

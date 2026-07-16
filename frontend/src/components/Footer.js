@@ -28,11 +28,11 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-bold text-lg text-white font-display tracking-widest uppercase">The <span className="text-biker-flame">Enforcers</span></span>
-                <span className="block text-[10px] text-neutral-600 tracking-[0.3em] uppercase -mt-0.5">MC</span>
+                <span className="block text-[10px] text-neutral-600 tracking-[0.3em] uppercase -mt-0.5">SC</span>
               </div>
             </div>
             <p className="text-neutral-500 max-w-md mb-2 text-sm leading-relaxed font-mono">
-              Riding for justice. Standing for what&rsquo;s right. A Canadian motorcycle club dedicated to community safety, victim support, and violence prevention.
+              Riding for justice. Standing for what&rsquo;s right. A Canadian street club dedicated to community safety, victim support, and violence prevention.
             </p>
             <p className="text-biker-flame/60 text-xs font-display italic mt-3 tracking-wider">&ldquo;Stand for what&rsquo;s right&rdquo;</p>
             <p className="text-neutral-700 text-xs mt-4 font-mono">
@@ -70,7 +70,7 @@ export default function Footer() {
 
         <div className="border-t-2 border-biker-steel/30 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-neutral-700 text-xs font-mono">
-            &copy; {currentYear} The Enforcers MC. All rights reserved.
+            &copy; {currentYear} The Enforcers SC. All rights reserved.
           </p>
           <p className="text-neutral-700 text-xs font-mono">
             &ldquo;Stand for what&rsquo;s right&rdquo;

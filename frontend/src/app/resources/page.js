@@ -43,7 +43,7 @@ export default function ResourcesPage() {
               </div>
               <div>
                 <h2 className="text-lg font-bold text-biker-flame mb-2 font-display uppercase tracking-wider">In an Emergency, Call 911</h2>
-                <p className="text-neutral-500 text-sm font-mono">If you or someone else is in immediate danger, do not wait. Call 911 now. The Enforcers MC is not a crisis response service.</p>
+                <p className="text-neutral-500 text-sm font-mono">If you or someone else is in immediate danger, do not wait. Call 911 now. The Enforcers SC is not a crisis response service.</p>
               </div>
             </div>
           </div>

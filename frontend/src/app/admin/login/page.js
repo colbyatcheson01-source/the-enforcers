@@ -49,7 +49,7 @@ export default function AdminLoginPage() {
             </svg>
           </div>
           <h1 className="text-2xl font-bold text-white font-display uppercase tracking-wider">Admin Login</h1>
-          <p className="text-neutral-500 mt-1 font-mono text-sm">The Enforcers MC — Club Admin</p>
+          <p className="text-neutral-500 mt-1 font-mono text-sm">The Enforcers SC — Club Admin</p>
         </div>
 
         <div className="bg-biker-dark border-2 border-biker-steel/60 rounded-sm p-8">

@@ -6,7 +6,7 @@ export default function TermsPage() {
         <div className="container-custom relative z-10 text-center">
           <div className="patch-badge-flame mb-4 inline-flex">Our Code</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white font-display uppercase tracking-tighter">Terms of Use</h1>
-          <p className="text-xl text-neutral-400 max-w-3xl mx-auto font-mono">Guidelines and terms governing the use of The Enforcers MC website and services.</p>
+          <p className="text-xl text-neutral-400 max-w-3xl mx-auto font-mono">Guidelines and terms governing the use of The Enforcers SC website and services.</p>
         </div>
       </section>
 

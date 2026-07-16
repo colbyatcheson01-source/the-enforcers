@@ -49,14 +49,14 @@ export default function HomePage() {
         <div className="container-custom relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="patch-badge-flame mb-6">The Enforcers MC</div>
+              <div className="patch-badge-flame mb-6">The Enforcers SC</div>
               <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white font-display leading-tight tracking-tighter">
                 STAND FOR<br />
                 <span className="text-biker-flame">WHAT&rsquo;S RIGHT</span>
               </h1>
               <div className="divider-biker w-48"></div>
               <p className="text-lg text-neutral-400 mb-6 max-w-2xl font-mono leading-relaxed">
-                Riding for justice. A Canadian motorcycle club dedicated to community safety, victim support, and violence prevention through lawful action.
+                Riding for justice. A Canadian street club dedicated to community safety, victim support, and violence prevention through lawful action.
               </p>
               <p className="text-base text-neutral-500 mb-8 max-w-2xl font-mono">
                 Building safer communities through support, awareness, and action.
