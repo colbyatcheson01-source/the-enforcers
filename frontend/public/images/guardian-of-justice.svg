@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="armor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a5568"/>
+      <stop offset="100%" style="stop-color:#2d3748"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a017"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#718096"/>
+      <stop offset="100%" style="stop-color:#4a5568"/>
+    </linearGradient>
+    <linearGradient id="hood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a202c"/>
+      <stop offset="100%" style="stop-color:#2d3748"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background shield shape -->
+  <ellipse cx="200" cy="300" rx="160" ry="200" fill="#0f172a" opacity="0.3"/>
+
+  <!-- Arrow wings - Left -->
+  <g transform="translate(195, 240)">
+    <!-- Left wing arrows -->
+    <line x1="-10" y1="0" x2="-80" y2="-30" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="-80,-30 -90,-38 -75,-35 -85,-25" fill="#d4a017"/>
+    <line x1="-10" y1="8" x2="-95" y2="-8" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="-95,-8 -108,-14 -90,-14 -100,-2" fill="#d4a017"/>
+    <line x1="-10" y1="16" x2="-85" y2="14" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="-85,14 -96,10 -82,8 -90,22" fill="#d4a017"/>
+    <line x1="-10" y1="24" x2="-70" y2="36" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="-70,36 -80,33 -66,30 -74,44" fill="#d4a017"/>
+    <line x1="-10" y1="-8" x2="-65" y2="-52" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="-65,-52 -74,-60 -60,-57 -68,-46" fill="#d4a017"/>
+  </g>
+
+  <!-- Arrow wings - Right -->
+  <g transform="translate(205, 240)">
+    <line x1="10" y1="0" x2="80" y2="-30" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="80,-30 90,-38 75,-35 85,-25" fill="#d4a017"/>
+    <line x1="10" y1="8" x2="95" y2="-8" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="95,-8 108,-14 90,-14 100,-2" fill="#d4a017"/>
+    <line x1="10" y1="16" x2="85" y2="14" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="85,14 96,10 82,8 90,22" fill="#d4a017"/>
+    <line x1="10" y1="24" x2="70" y2="36" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="70,36 80,33 66,30 74,44" fill="#d4a017"/>
+    <line x1="10" y1="-8" x2="65" y2="-52" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="65,-52 74,-60 60,-57 68,-46" fill="#d4a017"/>
+  </g>
+
+  <!-- Hood -->
+  <path d="M145,190 Q140,140 165,110 Q185,90 200,88 Q215,90 235,110 Q260,140 255,190 Q258,210 250,240 Q240,270 200,280 Q160,270 150,240 Q142,210 145,190Z" fill="url(#hood)" stroke="#4a5568" stroke-width="2"/>
+
+  <!-- Hood opening (face shadow) -->
+  <ellipse cx="200" cy="185" rx="35" ry="40" fill="#0f172a" opacity="0.7"/>
+
+  <!-- Eyes (glowing) -->
+  <ellipse cx="185" cy="178" rx="6" ry="3" fill="#d4a017" opacity="0.8"/>
+  <ellipse cx="215" cy="178" rx="6" ry="3" fill="#d4a017" opacity="0.8"/>
+
+  <!-- Neck / gorget -->
+  <rect x="175" y="275" width="50" height="20" rx="3" fill="url(#steel)" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Torso armor -->
+  <path d="M150,295 Q145,300 148,340 Q150,370 160,390 L175,395 L200,400 L225,395 L240,390 Q250,370 252,340 Q255,300 250,295Z" fill="url(#armor)" stroke="#4a5568" stroke-width="2"/>
+
+  <!-- Chest emblem - shield -->
+  <path d="M185,310 L200,305 L215,310 L215,340 Q215,355 200,360 Q185,355 185,340Z" fill="#0f172a" stroke="#d4a017" stroke-width="2"/>
+  <!-- Cross on shield -->
+  <line x1="200" y1="312" x2="200" y2="355" stroke="#d4a017" stroke-width="2.5"/>
+  <line x1="190" y1="328" x2="210" y2="328" stroke="#d4a017" stroke-width="2.5"/>
+
+  <!-- Arms -->
+  <path d="M148,300 Q130,310 120,340 Q115,360 118,375 Q125,385 135,380 Q140,370 145,350 Q150,330 152,310Z" fill="url(#armor)" stroke="#4a5568" stroke-width="1.5"/>
+  <path d="M252,300 Q270,310 280,340 Q285,360 282,375 Q275,385 265,380 Q260,370 255,350 Q250,330 248,310Z" fill="url(#armor)" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Hands (gauntlets) -->
+  <circle cx="125" cy="378" r="10" fill="url(#steel)" stroke="#4a5568" stroke-width="1.5"/>
+  <circle cx="275" cy="378" r="10" fill="url(#steel)" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Right hand grasping sword hilt -->
+  <rect x="193" y="368" width="14" height="25" rx="2" fill="#8B4513" stroke="#5C3317" stroke-width="1"/>
+  <!-- Crossguard -->
+  <rect x="183" y="390" width="34" height="6" rx="2" fill="#d4a017" stroke="#b8860b" stroke-width="1"/>
+  <!-- Pommel -->
+  <circle cx="200" cy="396" r="5" fill="#d4a017" stroke="#b8860b" stroke-width="1"/>
+
+  <!-- Blade (pointing downward) -->
+  <path d="M195,396 L193,440 Q192,460 200,490 Q208,460 207,440 L205,396Z" fill="#cbd5e0" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Blade center line -->
+  <line x1="200" y1="400" x2="200" y2="480" stroke="#e2e8f0" stroke-width="1" opacity="0.6"/>
+  <!-- Blade tip -->
+  <polygon points="200,490 193,480 207,480" fill="#94a3b8"/>
+
+  <!-- Legs -->
+  <path d="M170,395 Q168,420 170,450 Q172,470 175,490 L180,495 L185,490 Q183,470 182,450 Q180,430 178,410Z" fill="url(#armor)" stroke="#4a5568" stroke-width="1.5"/>
+  <path d="M230,395 Q232,420 230,450 Q228,470 225,490 L220,495 L215,490 Q217,470 218,450 Q220,430 222,410Z" fill="url(#armor)" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Leg armor plates -->
+  <rect x="168" y="430" width="14" height="35" rx="2" fill="url(#steel)" stroke="#4a5568" stroke-width="1" opacity="0.5"/>
+  <rect x="218" y="430" width="14" height="35" rx="2" fill="url(#steel)" stroke="#4a5568" stroke-width="1" opacity="0.5"/>
+
+  <!-- Pointed feet -->
+  <path d="M170,490 L165,505 L175,510 L180,505 Q178,498 175,493Z" fill="url(#steel)" stroke="#4a5568" stroke-width="1.5"/>
+  <path d="M230,490 L235,505 L225,510 L220,505 Q222,498 225,493Z" fill="url(#steel)" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Cape/cloak flowing behind -->
+  <path d="M145,280 Q120,320 115,380 Q112,420 120,450 Q130,460 140,445 Q135,410 140,370 Q145,330 150,295Z" fill="#1a202c" opacity="0.6"/>
+  <path d="M255,280 Q280,320 285,380 Q288,420 280,450 Q270,460 260,445 Q265,410 260,370 Q255,330 250,295Z" fill="#1a202c" opacity="0.6"/>
+
+  <!-- Decorative border circles -->
+  <circle cx="200" cy="300" r="145" fill="none" stroke="#d4a017" stroke-width="1.5" opacity="0.3" stroke-dasharray="8,6"/>
+  <circle cx="200" cy="300" r="155" fill="none" stroke="#d4a017" stroke-width="1" opacity="0.2" stroke-dasharray="4,8"/>
+</svg>

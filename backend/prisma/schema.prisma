@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum VolunteerStatus {
+  PENDING
+  APPROVED
+  INELIGIBLE
+  FLAGGED
+}
+
+enum ScreeningStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  ELIGIBLE
+  INELIGIBLE
+}
+
+model Admin {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Volunteer {
+  id            String           @id @default(uuid())
+  fullName      String
+  email         String
+  phone         String
+  availability  String
+  skills        String
+  consentGiven  Boolean
+  consentDate   DateTime         @default(now())
+  status        VolunteerStatus  @default(PENDING)
+  screeningStatus ScreeningStatus @default(NOT_STARTED)
+  screeningProvider String?
+  notes         String?
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+}
+
+model ContactSubmission {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  phone     String?
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model AnonymousTip {
+  id        String   @id @default(uuid())
+  content   String
+  category  String?
+  createdAt DateTime @default(now())
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  action    String
+  adminId   String?
+  details   String?
+  ipAddress String?
+  createdAt DateTime @default(now())
+}

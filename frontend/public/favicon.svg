@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#0f172a"/>
+  <path d="M35,55 L50,48 L65,55 L65,70 Q65,78 50,82 Q35,78 35,70Z" fill="none" stroke="#d4a017" stroke-width="3"/>
+  <line x1="50" y1="50" x2="50" y2="78" stroke="#d4a017" stroke-width="3"/>
+  <line x1="40" y1="62" x2="60" y2="62" stroke="#d4a017" stroke-width="3"/>
+  <path d="M30,40 Q28,30 35,20 Q42,12 50,10 Q58,12 65,20 Q72,30 70,40" fill="none" stroke="#cbd5e0" stroke-width="2.5"/>
+  <ellipse cx="43" cy="28" rx="3" ry="1.5" fill="#d4a017"/>
+  <ellipse cx="57" cy="28" rx="3" ry="1.5" fill="#d4a017"/>
+  <!-- Sword -->
+  <line x1="50" y1="82" x2="50" y2="95" stroke="#cbd5e0" stroke-width="2"/>
+  <line x1="44" y1="88" x2="56" y2="88" stroke="#d4a017" stroke-width="2"/>
+</svg>

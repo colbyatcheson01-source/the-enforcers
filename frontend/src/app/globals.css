@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-neutral-200 bg-guardian-midnight antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-white font-display;
+  }
+  a {
+    @apply text-guardian-gold hover:text-guardian-goldLight transition-colors;
+  }
+  p {
+    @apply text-neutral-300;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-guardian-midnight disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-guardian-gold text-guardian-void hover:bg-guardian-goldLight focus:ring-guardian-gold shadow-gold hover:shadow-gold-lg uppercase tracking-wider text-sm;
+  }
+  .btn-secondary {
+    @apply btn bg-transparent text-guardian-gold border-2 border-guardian-gold hover:bg-guardian-gold/10 focus:ring-guardian-gold uppercase tracking-wider text-sm;
+  }
+  .btn-accent {
+    @apply btn bg-guardian-steel text-guardian-void hover:bg-guardian-steelLight focus:ring-guardian-steel uppercase tracking-wider text-sm;
+  }
+  .card {
+    @apply bg-guardian-midnight/80 rounded-xl shadow-lg border border-guardian-iron/60 p-6 hover:border-guardian-gold/30 hover:shadow-gold transition-all duration-300 backdrop-blur-sm;
+  }
+  .card-knight {
+    @apply card relative overflow-hidden;
+  }
+  .card-knight::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-guardian-gold via-guardian-goldLight to-guardian-gold opacity-60;
+  }
+  .input {
+    @apply w-full px-4 py-3 rounded-lg border border-guardian-iron bg-guardian-void/80 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-guardian-gold focus:border-transparent transition-all;
+  }
+  .input-error {
+    @apply border-red-500 focus:ring-red-500;
+  }
+  .label {
+    @apply block text-sm font-medium text-neutral-300 mb-1 tracking-wide uppercase text-xs;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .page-title {
+    @apply text-4xl md:text-5xl font-bold text-white mb-6 font-display;
+  }
+  .page-subtitle {
+    @apply text-xl text-neutral-300 max-w-3xl;
+  }
+
+  /* Decorative divider */
+  .divider-guardian {
+    @apply flex items-center justify-center gap-4 my-8;
+  }
+  .divider-guardian::before,
+  .divider-guardian::after {
+    content: '';
+    @apply block h-px flex-1 bg-gradient-to-r from-transparent via-guardian-gold/50 to-transparent;
+  }
+  .divider-guardian-icon {
+    @apply w-6 h-6 text-guardian-gold;
+  }
+
+  /* Section with background pattern */
+  .section-knight {
+    @apply section relative;
+  }
+  .section-knight::before {
+    content: '';
+    @apply absolute inset-0 opacity-[0.03] bg-no-repeat bg-center;
+    background-image: url('/images/guardian-of-justice.svg');
+    background-size: 400px;
+    background-position: center;
+  }
+
+  /* Gold border accent */
+  .border-gold-accent {
+    @apply border-l-4 border-guardian-gold pl-4;
+  }
+
+  /* Quote styling */
+  .quote-guardian {
+    @apply relative pl-8 italic text-neutral-200 border-l-2 border-guardian-gold/50;
+  }
+  .quote-guardian::before {
+    content: '\201C';
+    @apply absolute -left-1 top-0 text-4xl text-guardian-gold/40 font-serif leading-none;
+  }
+
+  /* Shield badge */
+  .shield-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-guardian-void/60 border border-guardian-iron/60 text-guardian-gold text-sm font-medium;
+  }
+  .shield-badge::before {
+    content: '';
+    @apply block w-3 h-3.5 bg-guardian-gold flex-shrink-0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  /* Gold glow effect */
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(212, 160, 23, 0.15), 0 0 40px rgba(212, 160, 23, 0.05);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-guardian-void;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-guardian-iron rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-guardian-steelDark;
+}
+
+/* Selection */
+::selection {
+  @apply bg-guardian-gold/30 text-white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
