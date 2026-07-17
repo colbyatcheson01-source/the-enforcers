@@ -6,12 +6,12 @@ const basePath = process.env.NODE_ENV === 'production' ? '/the-protectors' : '';
 
 export const metadata = {
   title: 'The Enforcers SC | Stand for What\'s Right',
-  description: 'A Canadian street club dedicated to community safety, victim support, and violence prevention. Ride for justice. Stand for what\'s right.',
+  description: 'A Canadian street club dedicated to community safety, victim support, and violence prevention. Stand for what\'s right.',
   keywords: ['community safety', 'victim support', 'biker club', 'street club', 'Canadian nonprofit', 'The Enforcers', 'SC'],
   authors: [{ name: 'The Enforcers SC' }],
   openGraph: {
     title: 'The Enforcers SC | Stand for What\'s Right',
-    description: 'Riding for justice. Standing for what\'s right.',
+    description: 'Standing for what\'s right.',
     type: 'website',
     locale: 'en_CA',
   },

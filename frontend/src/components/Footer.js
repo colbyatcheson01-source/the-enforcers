@@ -32,7 +32,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-neutral-500 max-w-md mb-2 text-sm leading-relaxed font-mono">
-              Riding for justice. Standing for what&rsquo;s right. A Canadian street club dedicated to community safety, victim support, and violence prevention.
+              Standing for what&rsquo;s right. A Canadian street club dedicated to community safety, victim support, and violence prevention.
             </p>
             <p className="text-biker-flame/60 text-xs font-display italic mt-3 tracking-wider">&ldquo;Stand for what&rsquo;s right&rdquo;</p>
             <p className="text-neutral-700 text-xs mt-4 font-mono">

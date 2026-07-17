@@ -62,7 +62,7 @@ export default function AboutPage() {
                 About The <span className="text-biker-flame">Enforcers</span>
               </h1>
               <p className="text-lg text-neutral-400 leading-relaxed font-mono">
-                A Canadian street club dedicated to building safer communities through lawful, compassionate action. We ride for justice.
+                A Canadian street club dedicated to building safer communities through lawful, compassionate action. We stand for what&rsquo;s right.
               </p>
             </div>
             <div className="flex justify-center lg:justify-end">

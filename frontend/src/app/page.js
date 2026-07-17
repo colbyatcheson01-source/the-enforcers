@@ -56,14 +56,14 @@ export default function HomePage() {
               </h1>
               <div className="divider-biker w-48"></div>
               <p className="text-lg text-neutral-400 mb-6 max-w-2xl font-mono leading-relaxed">
-                Riding for justice. A Canadian street club dedicated to community safety, victim support, and violence prevention.
+                A Canadian street club dedicated to community safety, victim support, and violence prevention.
               </p>
               <p className="text-base text-neutral-500 mb-8 max-w-2xl font-mono">
                 Building safer communities through support, awareness, and action.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/volunteer" className="btn-primary text-lg px-8 py-4">
-                  Ride With Us
+                  Enlist Now
                 </Link>
                 <Link href="/contact" className="btn-secondary text-lg px-8 py-4">
                   Contact the Club
@@ -88,7 +88,7 @@ export default function HomePage() {
       <section className="bg-biker-dark border-y-2 border-biker-steel/30">
         <div className="container-custom py-8 text-center">
           <p className="text-lg md:text-xl text-neutral-400 font-display uppercase tracking-wider max-w-4xl mx-auto leading-relaxed">
-            &ldquo;Stand for what&rsquo;s right — Ride for justice. Protect the vulnerable. Face darkness without fear.&rdquo;
+            &ldquo;Stand for what&rsquo;s right. Protect the vulnerable. Face darkness without fear.&rdquo;
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ export default function HomePage() {
         <div className="container-custom relative z-10">
           <div className="text-center mb-16">
             <div className="patch-badge-flame mb-4 inline-flex">Our Mission</div>
-            <h2 className="page-title">How We Ride</h2>
+            <h2 className="page-title">What We Do</h2>
             <p className="page-subtitle mx-auto text-neutral-500 font-mono">
               Our patch means something. We combine direct support, education, and community coordination.
             </p>
@@ -127,7 +127,7 @@ export default function HomePage() {
             </h2>
             <div className="divider-biker max-w-xs mx-auto"></div>
             <p className="text-lg text-neutral-400 mb-8 max-w-2xl mx-auto leading-relaxed font-mono">
-              Whether you need support, want to ride with us, or are looking to partner, every action creates a safer community. Face darkness without fear.
+              Whether you need support, want to join us, or are looking to partner, every action creates a safer community. Face darkness without fear.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/volunteer" className="btn-primary text-lg px-8 py-4">

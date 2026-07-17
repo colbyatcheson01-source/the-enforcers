@@ -61,7 +61,7 @@ export default function VolunteerPage() {
             </div>
             <h2 className="text-2xl font-bold text-white mb-4 font-display uppercase tracking-wider">Welcome, Brother</h2>
             <p className="text-neutral-400 mb-8 leading-relaxed font-mono text-sm">
-              Thank you for your interest in riding with The Enforcers SC. Our team will review your application and contact you within 5-7 business days regarding next steps, including the background screening process.
+              Thank you for your interest in joining The Enforcers SC. Our team will review your application and contact you within 5-7 business days regarding next steps, including the background screening process.
             </p>
             <p className="text-sm text-neutral-600 font-mono">Questions? <span className="text-biker-flame">[insert email]</span></p>
           </div>
@@ -75,7 +75,7 @@ export default function VolunteerPage() {
       <section className="bg-biker-black relative overflow-hidden py-20 leather-bg">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-biker-flame/5 via-transparent to-transparent"></div>
         <div className="container-custom relative z-10 text-center">
-          <div className="patch-badge-flame mb-4 inline-flex">Ride With Us</div>
+          <div className="patch-badge-flame mb-4 inline-flex">Enlist Now</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white font-display uppercase tracking-tighter">Enlist in the Club</h1>
           <p className="text-xl text-neutral-400 max-w-3xl mx-auto font-mono">Join our club of dedicated volunteers working to build safer communities across Canada. Stand for what&rsquo;s right.</p>
         </div>
@@ -124,7 +124,7 @@ export default function VolunteerPage() {
             </div>
             <div>
               <label className="label">Skills & Experience</label>
-              <textarea name="skills" value={formData.skills} onChange={handleChange} rows={4} className={`input ${errors.skills ? 'input-error' : ''}`} placeholder="Describe your skills and why you want to ride with The Enforcers SC" />
+              <textarea name="skills" value={formData.skills} onChange={handleChange} rows={4} className={`input ${errors.skills ? 'input-error' : ''}`} placeholder="Describe your skills and why you want to join The Enforcers SC" />
               {errors.skills && <p className="mt-1 text-xs text-biker-flame font-mono">{errors.skills}</p>}
             </div>
 

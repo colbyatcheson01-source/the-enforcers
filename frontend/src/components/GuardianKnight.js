@@ -43,7 +43,7 @@ export default function GuardianKnight() {
           <span className="block w-8 border-t-2 border-dotted border-biker-steel"></span>
         </div>
         <p className="text-neutral-500 text-xs mt-3 max-w-xs mx-auto leading-relaxed font-mono">
-          Riding for justice. Standing for what&rsquo;s right.
+          Standing for what&rsquo;s right.
         </p>
       </div>
     </div>
