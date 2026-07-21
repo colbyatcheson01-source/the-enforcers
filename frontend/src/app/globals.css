@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-neutral-300 bg-biker-black antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-white font-display uppercase tracking-wider;
+  }
+  a {
+    @apply text-biker-chrome hover:text-biker-flame transition-colors;
+  }
+  p {
+    @apply text-neutral-300;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-sm font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-biker-black disabled:opacity-50 disabled:cursor-not-allowed uppercase tracking-widest text-sm;
+  }
+  .btn-primary {
+    @apply btn bg-biker-flame text-biker-black hover:bg-biker-flameLight focus:ring-biker-flame shadow-flame hover:shadow-biker-lg border-2 border-biker-flame;
+  }
+  .btn-secondary {
+    @apply btn bg-transparent text-biker-chrome border-2 border-biker-chrome hover:bg-biker-chrome/10 hover:text-biker-flame hover:border-biker-flame focus:ring-biker-chrome;
+  }
+  .btn-accent {
+    @apply btn bg-biker-blood text-white hover:bg-biker-bloodLight focus:ring-biker-blood border-2 border-biker-bloodLight;
+  }
+  .card {
+    @apply bg-biker-dark/90 rounded-sm border-2 border-biker-steel/60 p-6 hover:border-biker-flame/40 transition-all duration-300;
+  }
+  .card-biker {
+    @apply card relative overflow-hidden;
+  }
+  .card-biker::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-biker-flame via-biker-flameLight to-biker-blood;
+  }
+
+  /* Stitched border effect (biker patch style) */
+  .stitch-border {
+    border: 2px dashed #606060;
+    @apply rounded-sm p-4;
+  }
+  .stitch-border-gold {
+    border: 2px dashed #b8860b;
+    @apply rounded-sm p-4;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 rounded-sm border-2 border-biker-steel bg-biker-black/80 text-white placeholder-neutral-600 focus:outline-none focus:ring-2 focus:ring-biker-flame focus:border-biker-flame transition-all;
+  }
+  .input-error {
+    @apply border-biker-blood focus:ring-biker-blood;
+  }
+  .label {
+    @apply block text-sm font-bold text-neutral-300 mb-1 tracking-widest uppercase text-xs;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .page-title {
+    @apply text-4xl md:text-5xl font-bold text-white mb-6 font-display uppercase tracking-wider;
+  }
+  .page-subtitle {
+    @apply text-xl text-neutral-400 max-w-3xl;
+  }
+
+  /* Biker patch badge */
+  .patch-badge {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 border-2 border-biker-chrome bg-biker-black text-biker-chrome text-xs font-bold uppercase tracking-widest;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+  }
+  .patch-badge-flame {
+    @apply patch-badge border-biker-flame text-biker-flame;
+  }
+
+  /* Decorative divider */
+  .divider-biker {
+    @apply flex items-center justify-center gap-4 my-8;
+  }
+  .divider-biker::before,
+  .divider-biker::after {
+    content: '';
+    @apply block h-0.5 flex-1;
+    background: repeating-linear-gradient(90deg, #808080, #808080 8px, transparent 8px, transparent 16px);
+  }
+  .divider-biker-icon {
+    @apply w-6 h-6 text-biker-flame;
+  }
+
+  /* Section with background pattern */
+  .section-biker {
+    @apply section relative;
+  }
+  .section-biker::before {
+    content: '';
+    @apply absolute inset-0 opacity-[0.02] bg-no-repeat bg-center;
+    background-image: url('/images/enforcers-logo.svg');
+    background-size: 300px;
+    background-position: center;
+  }
+
+  /* Flame accent bar */
+  .flame-bar {
+    @apply relative overflow-hidden;
+  }
+  .flame-bar::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1;
+    background: linear-gradient(90deg, transparent, #ff6f00, #ff8f00, #ff6f00, transparent);
+  }
+
+  /* Leather grain texture overlay */
+  .leather-bg {
+    @apply relative;
+  }
+  .leather-bg::before {
+    content: '';
+    @apply absolute inset-0 opacity-5;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Winged skull divider */
+  .wing-divider {
+    @apply flex items-center justify-center gap-4 my-6;
+  }
+  .wing-divider::before,
+  .wing-divider::after {
+    content: '///';
+    @apply text-biker-steel text-sm tracking-widest;
+  }
+
+  /* Quote styling */
+  .quote-biker {
+    @apply relative pl-6 italic text-neutral-300 border-l-2 border-biker-flame font-display uppercase tracking-wide;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { @apply bg-biker-black; }
+::-webkit-scrollbar-thumb { @apply bg-biker-steel border-2 border-biker-black; }
+::-webkit-scrollbar-thumb:hover { @apply bg-biker-chromeDark; }
+
+::selection { @apply bg-biker-flame/40 text-white; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
