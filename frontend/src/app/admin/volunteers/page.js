@@ -195,6 +195,20 @@ export default function AdminVolunteersPage() {
                   </div>
                 </div>
 
+                {v.documents?.length > 0 && (
+                  <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                    <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">Documents</span>
+                    <ul className="mt-1 space-y-1">
+                      {v.documents.map(d => (
+                        <li key={d.id} className="text-xs text-blue-800">
+                          <a href={`/api/documents/${d.id}`} target="_blank" className="underline hover:text-blue-600">{d.originalName}</a>
+                          <span className="text-blue-400 ml-2">({(d.fileSize / 1024).toFixed(0)} KB)</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
                 {v.screeningNotes && (
                   <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
                     <span className="text-xs font-semibold text-red-700 uppercase tracking-wide">Screening Notes (Admin Only)</span>

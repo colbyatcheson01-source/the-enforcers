@@ -6,6 +6,7 @@ export default function VolunteerPage() {
   const [formData, setFormData] = useState({
     fullName: '', dateOfBirth: '', addressStreet: '', addressCity: '', addressProvince: '', addressPostalCode: '', email: '', phone: '', availability: '', skills: '', consentGiven: false,
   });
+  const [files, setFiles] = useState([]);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -35,13 +36,21 @@ export default function VolunteerPage() {
     if (errors[name]) setErrors(p => ({ ...p, [name]: undefined }));
   };
 
+  const handleFiles = (e) => {
+    setFiles([...e.target.files]);
+    if (errors.documents) setErrors(p => ({ ...p, [p]: undefined }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setServerError('');
     if (!validate()) return;
     setSubmitting(true);
     try {
-      const res = await fetch('/api/volunteer/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) });
+      const body = new FormData();
+      Object.entries(formData).forEach(([k, v]) => body.append(k, v));
+      files.forEach(f => body.append('documents', f));
+      const res = await fetch('/api/volunteer/', { method: 'POST', body });
       if (!res.ok) { const d = await res.json(); throw new Error(d.error || 'Error'); }
       setSubmitted(true);
     } catch (err) { setServerError(err.message); }
@@ -181,6 +190,18 @@ export default function VolunteerPage() {
             </div>
 
             <div className="bg-biker-black/80 border-2 border-biker-steel/60 rounded-sm p-6">
+              <div className="mb-4">
+                <label className="label">Criminal Record Check Documents</label>
+                <p className="text-xs text-neutral-500 mb-3 font-mono">Upload government-issued ID and proof of address. Accepted: PDF, JPG, PNG, DOC. Max 10MB each.</p>
+                <input type="file" name="documents" multiple onChange={handleFiles} accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" className="block w-full text-sm text-neutral-400 file:mr-4 file:py-2 file:px-4 file:rounded-sm file:border-0 file:text-sm file:font-bold file:bg-biker-flame file:text-white hover:file:bg-biker-flame/80 cursor-pointer" />
+                {files.length > 0 && (
+                  <ul className="mt-2 space-y-1">
+                    {files.map((f, i) => (
+                      <li key={i} className="text-xs text-neutral-500 font-mono">{f.name} ({(f.size / 1024).toFixed(1)} KB)</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
               <div className="flex items-start gap-3">
                 <input type="checkbox" id="consentGiven" name="consentGiven" checked={formData.consentGiven} onChange={handleChange} className="mt-1 w-4 h-4 text-biker-flame border-biker-steel rounded-none focus:ring-biker-flame bg-biker-black" />
                 <label htmlFor="consentGiven" className="text-sm text-neutral-400 leading-relaxed cursor-pointer font-mono">

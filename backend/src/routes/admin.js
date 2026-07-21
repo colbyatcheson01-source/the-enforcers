@@ -28,6 +28,9 @@ router.get('/volunteers', async (req, res) => {
         memberSince: true,
         notes: true,
         createdAt: true,
+        documents: {
+          select: { id: true, originalName: true, mimeType: true, fileSize: true, category: true, createdAt: true }
+        },
       }
     });
 
@@ -176,6 +179,9 @@ router.get('/volunteers/export', async (req, res) => {
         consentGiven: true,
         consentDate: true,
         createdAt: true,
+        documents: {
+          select: { id: true, originalName: true, mimeType: true, fileSize: true, category: true, createdAt: true }
+        },
       }
     });
 
